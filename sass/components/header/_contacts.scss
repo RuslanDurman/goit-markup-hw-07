@@ -1,0 +1,35 @@
+.contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contacts .item+.item {
+    margin-left: 50px;
+}
+
+.contacts .link {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.envelope,
+.smartphone {
+    margin-right: 10px;
+    fill: currentColor;
+    /* display: block;
+    position: relative;
+    margin-top: -2px; */
+
+}
